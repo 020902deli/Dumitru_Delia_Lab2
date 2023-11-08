@@ -13,5 +13,6 @@ namespace Dumitru_Delia_Lab2.Models
 
         [Display(Name = "Full Name")]
         public string FullName => FirstName + " " + LastName;
+        public ICollection<Book>? Books { get; set; }
     }
 }
