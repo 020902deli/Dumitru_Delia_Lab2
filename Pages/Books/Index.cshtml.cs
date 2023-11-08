@@ -54,7 +54,7 @@ namespace Dumitru_Delia_Lab2.Pages.Books
                 BookID = id.Value;
                 Book book = BookD.Books
                 .Where(i => i.ID == id.Value).Single();
-                BookD.Categories = book.BookCategories.Select(s => s.Category);
+                BookD.Categories = book.BookCategories.Select(s => s.Category); 
             }
             switch (sortOrder)
             {
