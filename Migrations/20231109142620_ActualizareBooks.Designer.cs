@@ -4,6 +4,7 @@ using Dumitru_Delia_Lab2.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Dumitru_Delia_Lab2.Migrations
 {
     [DbContext(typeof(Dumitru_Delia_Lab2Context))]
-    partial class Dumitru_Delia_Lab2ContextModelSnapshot : ModelSnapshot
+    [Migration("20231109142620_ActualizareBooks")]
+    partial class ActualizareBooks
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
