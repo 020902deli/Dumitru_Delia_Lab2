@@ -19,6 +19,8 @@ namespace Dumitru_Delia_Lab2.Models
         //navigation property
         public int? AuthorID { get; set; }
         public Author? Author { get; set; }
+        public int? BorrowingID { get; set; }
+        public Borrowing? Borrowing { get; set; }
         //navigation property
         public ICollection<BookCategory>? BookCategories { get; set; }
     }
